@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sveltea — Belleza & Cuidado Femenino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="images/logo.png" alt="Logo Sveltea" class="logo" />
+        <span class="brand-name">Sveltea</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <button id="cart-btn" class="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+      </nav>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <h1>Sveltea</h1>
+        <p class="subtitle">Belleza y cuidado femenino — Productos elegantes y efectivos</p>
+        <a href="#productos" class="btn primary">Comprar ahora</a>
+      </div>
+    </section>
+
+    <section id="productos" class="section products">
+      <div class="container">
+        <h2>Productos destacados</h2>
+        <p class="lead">Una selección curada con ingredientes de alta calidad.</p>
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Asesoría personalizada</h3>
+            <p>Plan de cuidado según tu tipo de piel y objetivos.</p>
+          </div>
+          <div class="card">
+            <h3>Tratamientos profesionales</h3>
+            <p>Colaboramos con centros asociados para tratamientos selectos.</p>
+          </div>
+          <div class="card">
+            <h3>Envío y seguimiento</h3>
+            <p>Envíos discretos y rápidos a todo el país.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section about">
+      <div class="container">
+        <h2>Sobre Sveltea</h2>
+        <p>En Sveltea creemos que la belleza es una mezcla de cuidado, simplicidad y confianza. Nuestros productos combinan fórmulas efectivas con una estética elegante.</p>
+      </div>
+    </section>
+
+    <section id="testimonios" class="section testimonials">
+      <div class="container">
+        <h2>Testimonios</h2>
+        <blockquote>“Resultados visibles y un empaque precioso. Me encanta.” — Ana G.</blockquote>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h2>Contacto</h2>
+          <p>¿Dudas? Escríbenos y te responderemos en menos de 48 horas.</p>
+          <ul class="contact-list">
+            <li>Email: contacto@sveltea.example</li>
+            <li>Teléfono: +34 600 000 000</li>
+            <li>Dirección: Calle Ejemplo 123, Ciudad</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="contact-right">
+          <label>Nombre<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Mensaje<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button id="close-cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="totals">
+        <span>Total:</span> <strong id="cart-total">€0.00</strong>
+      </div>
+      <div class="checkout-actions">
+        <button id="checkout-btn" class="btn primary">Pagar</button>
+        <div class="payment-hint">Aceptamos: Tarjeta (Stripe), PayPal, transferencia</div>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Sveltea</div>
+      <div class="socials">Síguenos: Instagram · Facebook · TikTok</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

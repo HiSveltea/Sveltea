@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "name": "Sérum Iluminador",
+    "price": 29.9,
+    "image": "images/product1.jpg",
+    "description": "Sérum con vitamina C y péptidos."
+  },
+  {
+    "id": "p2",
+    "name": "Crema Reafirmante",
+    "price": 39.9,
+    "image": "images/product2.jpg",
+    "description": "Crema nutritiva para pieles maduras."
+  },
+  {
+    "id": "p3",
+    "name": "Aceite Corporal",
+    "price": 24.5,
+    "image": "images/product3.jpg",
+    "description": "Aceite ligero con aroma floral."
+  }
+]
